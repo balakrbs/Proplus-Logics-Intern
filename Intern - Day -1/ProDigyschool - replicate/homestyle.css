@@ -106,7 +106,7 @@
   padding: 20px 10px;
 }
 .about img {
-  width: 65%;
+  width: 60%;
   border-radius: 100%;
 }
 
@@ -148,6 +148,173 @@
 .main-title > span {
   font-weight: 700;
 }
+
+/* Vision */
+
+.vision {
+  position: relative;
+  height: 30vh;
+  background-color: #ffffff;
+}
+.vision-quote {
+  border: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  background: transparent;
+  padding: 30px 5px 5px 5px;
+  box-shadow: inset 0px 0px 10px 20px #ffff;
+}
+
+.vision-quote h2 {
+  color: #ffc107;
+  font-size: 34px;
+  padding-bottom: 8px;
+}
+.vision-quote h3 {
+  color: #ffffff;
+  font-style: italic;
+  padding-bottom: 8px;
+  font-size: 30px;
+}
+.vision-quote p {
+  font-size: 16px;
+  font-weight: 600;
+  text-shadow: 0px 0px 10px #d31313;
+  margin-left: 40%;
+}
+
+/* Facilities */
+
+.facilities {
+  text-align: center;
+  padding: 5% 12%;
+}
+
+.title-1 {
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  color: #ffc107;
+}
+
+.title-2 {
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.card {
+  background: linear-gradient(to bottom, #ffde7c 0%, white 50%, #ffde7c 100%);
+  background-size: 100% 300%;
+  animation: card-ani 15s linear infinite;
+}
+
+@keyframes card-ani {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 0% 100%;
+  }
+}
+
+.card-title {
+  font-size: 18px;
+  padding: 5px 0px;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 10px;
+}
+.facilities .card {
+  overflow: hidden;
+  position: relative;
+}
+
+.facilities .card img {
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  display: block;
+}
+
+.facilities .card:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* course */
+
+.course {
+  text-align: center;
+  padding: 2% 8%;
+  background: linear-gradient(to right, #000000 50%, #3d3d3d 80%, #777777 150%);
+}
+
+.course .card {
+  background: transparent;
+  color: #ffff;
+  border: 1px solid #ffc107;
+  padding: 10px;
+}
+.course .card-title,
+.course .card-text {
+  padding: 2px 0px;
+}
+
+/* ========================== */
+
+/* Footer */
+
+footer {
+  padding: 2% 9%;
+  color: #ffffff;
+  background: linear-gradient(to left, #272727 50%, #3d3d3d 80%, #777777 150%);
+}
+footer .row p {
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+footer .row img {
+  width: 40%;
+  padding: 5px;
+  border-radius: 60px 60px 60px 60px;
+}
+.menus {
+  padding-top: 20px;
+}
+.menu-title {
+  padding: 0;
+}
+.menu-sub-title {
+  padding-left: 20px;
+  color: #ffc107;
+}
+
+.menus a,
+.menus a p {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding-left: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.menus p i {
+  padding-left: 20px;
+  transition: 0.4s ease-in-out;
+}
+
+.menus a p:hover,
+.menus p a:hover {
+  color: #ffc107;
+}
+
 /* Responsive */
 @media only screen and (max-width: 768px) {
   .mini-contact {

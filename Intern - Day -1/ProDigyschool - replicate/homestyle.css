@@ -154,7 +154,6 @@
 .vision {
   position: relative;
   height: 30vh;
-  background-color: #ffffff;
 }
 .vision-quote {
   border: none;
@@ -205,7 +204,7 @@
   padding-bottom: 30px;
 }
 
-.card {
+.facilities .card {
   background: linear-gradient(to bottom, #ffde7c 0%, white 50%, #ffde7c 100%);
   background-size: 100% 300%;
   animation: card-ani 15s linear infinite;
@@ -265,9 +264,118 @@
 .course .card-text {
   padding: 2px 0px;
 }
+/* Video */
 
-/* ========================== */
+.video {
+  text-align: center;
+  padding: 5%;
+}
+.video iframe {
+  width: 1000px;
+  min-height: 450px;
+}
 
+hr {
+  width: 50%;
+}
+
+/* Testimonial */
+.testimonial {
+  padding: 2% 10%;
+  text-align: center;
+}
+
+.slider-container {
+  overflow: hidden;
+  padding: 2% 0;
+  width: 100%;
+}
+
+.card-slider {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  cursor: grab;
+  user-select: none;
+  padding: 8px 15px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.card-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.card-slider:active {
+  cursor: grabbing;
+}
+
+.testimonial .card {
+  flex: 0 0 auto;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+.testimonial .card:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 5px 2px #777777;
+}
+.testimonial .testimonial-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+.testimonial .card-title {
+  font-size: 20px;
+  padding: 20px 0px;
+  font-weight: 500;
+}
+.testimonial .card-text {
+  font-size: 14px;
+  background-color: #ebebeb;
+  border-radius: 20px;
+  line-height: 22px;
+  font-weight: lighter;
+}
+.testimonial .rating-stars img {
+  width: 16px;
+}
+/* Latest news */
+
+.latest-news {
+  text-align: center;
+  padding: 4% 8%;
+}
+.latest-news .card {
+  transition: 0.3s ease-in-out;
+  padding: 10px;
+}
+.latest-news .card img {
+  border-radius: 10px;
+}
+.latest-news .card:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 5px 1px #bebebe;
+}
+.latest-news .card a {
+  background-color: #ffffff;
+  color: #ffc107;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px 15px;
+  font-size: 13px;
+  border: 1px solid #ffc107;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.latest-news .card a:hover {
+  background-color: #ffc107;
+  color: #ffffff;
+}
 /* Footer */
 
 footer {
@@ -286,35 +394,90 @@ footer .row img {
   border-radius: 60px 60px 60px 60px;
 }
 .menus {
-  padding-top: 20px;
-}
-.menu-title {
-  padding: 0;
-}
-.menu-sub-title {
-  padding-left: 20px;
-  color: #ffc107;
+  line-height: 24px;
+  margin-top: 20px;
 }
 
-.menus a,
-.menus a p {
+.menu-title {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.menu-sub-title {
+  color: #ffc107;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.menus a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 16px;
-  padding-left: 20px;
+  font-size: 14px;
   transition: 0.3s ease-in-out;
 }
 
-.menus p i {
-  padding-left: 20px;
-  transition: 0.4s ease-in-out;
+.menus p {
+  margin: 0 0 0 10px;
 }
 
-.menus a p:hover,
-.menus p a:hover {
+.menus p i {
+  margin-right: 5px;
+}
+
+.menus a:hover {
   color: #ffc107;
 }
+.useful-links {
+  padding: 0;
+}
+.useful-links li a {
+  font-size: 18px;
+  margin-left: 5px;
+}
+.menus li {
+  list-style: none;
+  padding: 8px 0px 8px 0px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.menus li i {
+  margin-right: 5px;
+}
+.contactus-links p {
+  padding: 10px 0px;
+}
 
+.contactus-links p a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menus .social-media img {
+  width: 18%;
+  transition: 0.3s ease-in-out;
+}
+.menus .social-media img:hover {
+  width: 18%;
+  transform: scale(0.9);
+}
+/* copyright */
+.copyright {
+  background-color: #d1a930;
+  color: #000000;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+}
+
+.copyright p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
 /* Responsive */
 @media only screen and (max-width: 768px) {
   .mini-contact {
@@ -326,15 +489,12 @@ footer .row img {
   .navbar-nav {
     gap: 15px;
   }
-  .slider {
-    height: 15rem;
-  }
 
   .slider > svg {
-    top: -4.2em;
+    top: -3.5em;
   }
   .about {
-    padding: 10px 0px;
+    padding: 10px 5px;
   }
   .main-title {
     color: #000000;
@@ -345,5 +505,49 @@ footer .row img {
   .about img {
     width: 60%;
     border-radius: 100%;
+  }
+  .vision {
+    height: 20vh;
+  }
+  .vision-quote {
+    padding: 10px 5px 5px 5px;
+    box-shadow: inset 0px 0px 5px 5px #ffff;
+  }
+  .vision-quote h2 {
+    font-size: 25px;
+    padding-bottom: 4px;
+  }
+  .vision-quote h3 {
+    padding-bottom: 4px;
+    font-size: 22px;
+    color: #000000;
+    font-weight: 700;
+  }
+  .vision-quote p {
+    font-size: 14px;
+  }
+  .facilities {
+    padding: 5% 15%;
+  }
+  .course {
+    padding: 10% 15%;
+  }
+  .video iframe {
+    max-width: 350px;
+    min-height: 200px;
+  }
+  hr {
+    width: 80%;
+  }
+  .testimonial .card-text {
+    font-size: 16px;
+  }
+  .testimonial .card-title {
+    font-size: 22px;
+  }
+
+  .latest-news {
+    background-color: #444;
+    padding: 6% 10%;
   }
 }

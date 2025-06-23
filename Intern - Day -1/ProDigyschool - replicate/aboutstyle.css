@@ -1,0 +1,307 @@
+.about-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(194, 124, 58, 0.4); /* red with 50% opacity */
+  z-index: 1;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+}
+
+.overlay-text h1 {
+  font-size: 3rem;
+}
+.overlay-text p {
+  font-size: 1rem;
+}
+
+.about-wave {
+  position: relative;
+  z-index: 4;
+  top: -13rem;
+}
+
+.about-wave svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#welcome-section {
+  position: relative;
+  margin-top: -22%;
+  padding: 40px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 6;
+}
+/* Welcome Box */
+.welcome-box {
+  width: 80%;
+  text-align: center;
+  padding: 40px;
+  background-color: #ffffff;
+}
+.title-1 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  color: #ffc107;
+}
+
+.title-2 {
+  color: #000000;
+  font-size: 34px;
+}
+.welcome-box p {
+  font-size: 17px;
+  line-height: 28px;
+  color: grey;
+}
+.hr-line {
+  width: 85%;
+  border: 2px dashed #252525;
+}
+
+#vision-section,
+#mission-section,
+#school-team-section {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision-box,
+.mission-box,
+.school-team-box {
+  width: 80%;
+  line-height: 28px;
+  background-color: #ffffff;
+}
+
+.vision-box img,
+.mission-box img,
+.school-team-box img {
+  width: 50%;
+}
+.vision-box p,
+.mission-box p,
+.about-montessori-content p {
+  font-size: 14px;
+  padding: 5px;
+  color: rgb(153, 153, 153);
+}
+
+.about-montessori-box {
+  line-height: 28px;
+}
+.about-montessori-content {
+  margin-top: -12em;
+  margin-bottom: -12em;
+}
+.school-team-box {
+  background-color: #585858;
+}
+.school-team-box img {
+  width: 30%;
+}
+#our-team-section {
+  padding: 40px 10%;
+  background-color: #f9f9f9;
+}
+
+.our-team-box .card {
+  width: 80%;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.our-team-box .card:hover {
+  transform: translateY(-5px);
+}
+
+.our-team-box .card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.card-text {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.btn i {
+  font-size: 20px;
+  color: #0077b5;
+}
+
+#about-maria-section {
+  background-color: #fff;
+}
+
+.about-maria-box {
+  background-color: #faebd7;
+  border-radius: 8px;
+}
+
+.about-maria-box h2 {
+  font-size: 28px;
+}
+
+.about-maria-box p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+#guiding-principles-section {
+  padding: 10px 8%;
+  background-color: #ffffff;
+}
+
+.guiding-principles-box .card {
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: none;
+  margin-bottom: 15px;
+  box-shadow: 5px 5px 6px #dadada;
+}
+.guiding-principles-box .card h5 {
+  font-size: 24px;
+  padding: 20px 0px;
+  font-weight: 400;
+}
+.guiding-principles-box .card p {
+  font-size: 17px;
+  line-height: 1.6;
+  padding: 0px 50px;
+  color: #818181;
+}
+.guiding-principles-box .card h5 i {
+  margin: 0px 16px;
+  font-size: 20px;
+  color: #afafaf;
+  font-weight: light;
+}
+#safety-security-section {
+  padding: 4% 8%;
+  background-color: #ffffff;
+}
+.safety-security-box p {
+  color: #7c7c7c;
+}
+.safety-security-box .card {
+  width: 100%;
+  border: none;
+  text-align: center;
+}
+.safety-security-box .card img {
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+.safety-security-box .card-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-image::before {
+    height: 35%;
+  }
+  .overlay-text {
+    top: 18%;
+    left: 50%;
+  }
+  .overlay-text h1 {
+    font-size: 2rem;
+  }
+  .overlay-text p {
+    font-size: 0.6rem;
+  }
+  .about-wave {
+    top: -20.6rem;
+  }
+  #welcome-section {
+    margin-top: -22rem;
+    padding: 20px 0px;
+  }
+  .welcome-box {
+    text-align: center;
+    padding: 20px;
+  }
+  .title-2 {
+    color: #000000;
+    font-size: 26px;
+  }
+  .welcome-box p {
+    font-size: 15px;
+    color: grey;
+  }
+
+  .vision-box img,
+  .mission-box img,
+  .school-team-box img {
+    width: 100%;
+  }
+  .about-montessori-content {
+    margin-top: -3em;
+    margin-bottom: -4em;
+  }
+  #our-team-section {
+    padding: 10px 5%;
+  }
+  .our-team-box .card {
+    width: 100%;
+  }
+  .about-maria-box img {
+    margin-bottom: 20px;
+  }
+  .about-maria-box p {
+    text-align: center;
+  }
+  .guiding-principles-box .card h5 {
+    font-size: 18px;
+  }
+  .guiding-principles-box .card p {
+    font-size: 16px;
+    padding: 0px 20px;
+  }
+  .guiding-principles-box .card h5 i {
+    margin: 0px 10px;
+  }
+}

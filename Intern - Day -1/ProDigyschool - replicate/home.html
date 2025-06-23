@@ -38,144 +38,107 @@
       >
     </div>
     <!-- Navigation Bar -->
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div
-          class="container-fluid d-flex justify-content-between align-items-center"
-        >
-          <!-- Logo -->
-          <a class="navbar-brand" href="./home.html">
-            <img
-              src="./Images/prodigy-international-school-logo-2.png"
-              alt=""
-              width="125"
-            />
-          </a>
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <!-- Logo -->
+      <a class="navbar-brand" href="./home.html">
+        <img src="./Images/prodigy-international-school-logo-2.png" alt="" width="125" />
+      </a>
 
-          <!-- Toggler (for mobile) -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <!-- Toggler (for mobile) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-          <!-- Navbar Links -->
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarScroll"
-          >
-            <ul class="navbar-nav my-2 my-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./home.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  About us
-                </a>
-                <ul class="dropdown-menu border-0 p-3">
-                  <li><a class="dropdown-item" href="#">Vision</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Mission</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Montessori Pedagogy</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Team</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Features</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Beyond the Class room</a>
-                  </li>
-                </ul>
-              </li>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
+        <ul class="navbar-nav my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+          </li>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Courses Offered
-                </a>
-                <ul class="dropdown-menu border-0 p-3">
-                  <li><a class="dropdown-item" href="#">Toddler</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Primary Elementary</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Erdkinder</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Admission
-                </a>
-                <ul class="dropdown-menu border-0 p-3">
-                  <li>
-                    <a class="dropdown-item" href="#">Enrolment Process</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Enquiry Form</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Consultancy Services</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  media
-                </a>
-                <ul class="dropdown-menu border-0 p-3">
-                  <li><a class="dropdown-item" href="#">Blog</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Testimonials</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+          <!-- About Us Dropdown -->
+          <li class="nav-item dropdown">
+            <div class="btn-group">
+              <a href="./about.html" class="nav-link">About Us</a>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split nav-link px-2"
+                data-bs-toggle="dropdown" aria-expanded="false"></button>
+              <ul class="dropdown-menu border-0 p-2" id="aboutDropdown">
+                <li><a class="dropdown-item" href="./about.html#vision-section">Vision</a></li>
+                <li><hr class="dropdown-divider full-divider" /></li>
+                <li><a class="dropdown-item" href="./about.html#mission-section">Mission</a></li>
+                <li><hr class="dropdown-divider full-divider" /></li>
+                <li><a class="dropdown-item" href="./about.html#about-montessori-section">Montessori Pedagogy</a></li>
+                <li><hr class="dropdown-divider full-divider" /></li>
+                <li><a class="dropdown-item" href="./about.html#school-team-section">Team</a></li>
+                <li><hr class="dropdown-divider full-divider" /></li>
+                <li><a class="dropdown-item" href="#">Features</a></li>
+                <li><hr class="dropdown-divider full-divider" /></li>
+                <li><a class="dropdown-item" href="#">Beyond the Class room</a></li>
+              </ul>
+            </div>
+          </li>
 
+          <!-- Courses Offered Dropdown -->
+          <li class="nav-item dropdown">
+            <div class="btn-group">
+              <a href="#" class="nav-link">Courses Offered</a>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split nav-link px-2"
+                data-bs-toggle="dropdown" aria-expanded="false"></button>
+              <ul class="dropdown-menu border-0 p-2" id="coursesDropdown">
+                <li><a class="dropdown-item" href="#">Toddler</a></li>
+                <li><hr class="dropdown-divider full-divider" /></li>
+                <li><a class="dropdown-item" href="#">Primary Elementary</a></li>
+                <li><hr class="dropdown-divider full-divider" /></li>
+                <li><a class="dropdown-item" href="#">Erdkinder</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Admission Dropdown -->
+          <li class="nav-item dropdown">
+            <div class="btn-group">
+              <a href="#" class="nav-link">Admission</a>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split nav-link px-2"
+                data-bs-toggle="dropdown" aria-expanded="false"></button>
+              <ul class="dropdown-menu border-0 p-2" id="admissionDropdown">
+                <li><a class="dropdown-item" href="#">Enrolment Process</a></li>
+                <li><hr class="dropdown-divider full-divider" /></li>
+                <li><a class="dropdown-item" href="#">Enquiry Form</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Static link -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Consultancy Services</a>
+          </li>
+
+          <!-- Media Dropdown -->
+          <li class="nav-item dropdown">
+            <div class="btn-group">
+              <a href="#" class="nav-link">Media</a>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split nav-link px-2"
+                data-bs-toggle="dropdown" aria-expanded="false"></button>
+              <ul class="dropdown-menu border-0 p-2" id="mediaDropdown">
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><hr class="dropdown-divider full-divider" /></li>
+                <li><a class="dropdown-item" href="#">Testimonials</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Contact link -->
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
     <main>
       <!-- Image Slider -->
       <div class="slider">
@@ -250,7 +213,7 @@
           </div>
         </div>
       </div>
-      <!-- Vision -->
+      <!-- Vision here-->
       <div class="vision">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -265,7 +228,7 @@
           <p>-Dr. Maria Montessori .</p>
         </div>
       </div>
-      <!-- facilities -->
+      <!-- facilities here-->
       <div class="facilities">
         <h3 class="title-1">SCHOOL FACILITIES</h3>
         <h1 class="title-2">ENGAGING & SPACIOUS SCHOOL CAMPUS</h1>
@@ -357,7 +320,7 @@
           </div>
         </div>
       </div>
-      <!-- Course -->
+      <!-- Course here-->
       <div class="course">
         <h3 class="title-1">CREATIVE LEARNING OPPORTUNITY FOR KIDS</h3>
         <h1 class="title-2 text-white">COURSES OFFERED</h1>
@@ -408,7 +371,7 @@
           </div>
         </div>
       </div>
-      <!-- Video -->
+      <!-- Video here-->
       <div class="video">
         <iframe
           src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"
@@ -416,8 +379,7 @@
         </iframe>
       </div>
       <hr class="mx-auto border-2" />
-
-      <!-- Testimonial -->
+      <!-- Testimonial here-->
       <div class="testimonial">
         <h1 class="title-2">TESTIMONIAL</h1>
         <div class="slider-container">
@@ -524,15 +486,18 @@
           </div>
         </div>
       </div>
-
-      <!-- Latest news -->
+      <!-- Latest news here -->
       <div class="latest-news">
         <h3 class="title-1">OUR BLOGS</h3>
         <h1 class="title-2">LATEST NEWS</h1>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100" style="max-width: 20rem">
-              <img src="./Images/library.jpg" class="card-img-top" alt="..." />
+              <img
+                src="./Images/ANNUAL-DAY.jpg"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body text-center">
                 <h5 class="card-title">ANNUAL DAY</h5>
                 <p class="card-text">
@@ -545,7 +510,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="max-width: 20rem">
-              <img src="./Images/library.jpg" class="card-img-top" alt="..." />
+              <img src="./Images/Events.jpg" class="card-img-top" alt="..." />
               <div class="card-body text-center">
                 <h5 class="card-title">EVENTS</h5>
                 <p class="card-text">
@@ -558,7 +523,11 @@
           </div>
           <div class="col">
             <div class="card h-100" style="max-width: 20rem">
-              <img src="./Images/library.jpg" class="card-img-top" alt="..." />
+              <img
+                src="./Images/National-Festivals.jpg"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body text-center">
                 <h5 class="card-title">NATIONAL FESTIVALS</h5>
                 <p class="card-text">
@@ -645,11 +614,11 @@
             <ul class="useful-links">
               <li>
                 <i class="fa-solid fa-caret-right" style="color: #ffc107"></i
-                ><a href="">Home</a>
+                ><a href="./home.html">Home</a>
               </li>
               <li>
                 <i class="fa-solid fa-caret-right" style="color: #ffc107"></i
-                ><a href="">About us</a>
+                ><a href="./about.html">About us</a>
               </li>
               <li>
                 <i class="fa-solid fa-caret-right" style="color: #ffc107"></i
@@ -665,7 +634,7 @@
               </li>
               <li>
                 <i class="fa-solid fa-caret-right" style="color: #ffc107"></i
-                ><a href="">Contact Us</a>
+                ><a href="./contact.html">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -696,7 +665,7 @@
         </div>
       </div>
     </footer>
-    <!-- Copyright -->
+    <!-- Copyright here-->
     <div class="copyright">
       <p>©2025 Prodigy International Montessori School. All Rights Reserved.</p>
     </div>

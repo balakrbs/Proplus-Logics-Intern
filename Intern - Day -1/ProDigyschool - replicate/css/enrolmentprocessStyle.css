@@ -1,0 +1,189 @@
+.enrolment-process-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.enrolment-process-image img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.enrolment-process-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(194, 124, 58, 0.4); /* red with 50% opacity */
+  z-index: 1;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+}
+
+.overlay-text h1 {
+  font-size: 3rem;
+}
+.overlay-text p {
+  font-size: 1rem;
+}
+
+.enrolment-process-wave {
+  position: relative;
+  z-index: 4;
+  top: -13rem;
+}
+
+.enrolment-process-wave svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#enrolment-process-section {
+  position: relative;
+  z-index: 6;
+  margin-top: -18rem;
+}
+
+.enrolment-process {
+  max-width: 890px;
+  width: 100%;
+  padding: 30px;
+  background-color: rgb(255, 223, 228);
+}
+.enrolment-process p {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1rem;
+  max-width: 100%;
+}
+.admission{
+  padding: 20px;
+}
+.admission .col-lg-5 {
+  padding: 1.4rem;
+}
+
+.admission-steps p {
+  font-size: 15px;
+  padding: 10px 0px;
+}
+.admission-policy p {
+  font-size: 15px;
+  padding: 4px 0px;
+}
+#admission-guidelines {
+  padding: 10px 0;
+}
+
+.admission-guidelines {
+  max-width: 900px;
+  background-color: #3d3d3d;
+  border-radius: 8px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.admission-guidelines h2,
+.admission-guidelines h5 {
+  color: white;
+}
+
+.document-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.document-list li {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.document-list i {
+  color: #ebb800;
+  margin-right: 15px;
+}
+#need-assistance {
+  margin: 5% 0;
+}
+#need-assistance .container {
+  max-width: 900px;
+  padding: 2.5%;
+  background-color: #ffcf75;
+}
+
+.accordion-button {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: black !important;
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  color: black !important;
+}
+
+.accordion-collapse {
+  transition: none !important;
+}
+
+.accordion-item {
+  border: 1px solid #ccc;
+}
+
+.accordion-body {
+  text-align: justify;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media only screen and (max-width: 768px) {
+  .enrolment-process-wave {
+    top: -21.1rem;
+  }
+  .enrolment-process-image::before {
+    height: 35%;
+  }
+  .overlay-text {
+    top: 10%;
+  }
+  .overlay-text h1 {
+    font-size: 1.2rem;
+  }
+  .overlay-text p {
+    font-size: 0.4rem;
+  }
+  .admission{
+    margin: 0 2px 0 2px;
+  }
+
+  .admission-guidelines {
+  padding: 30px 15px;
+}
+#need-assistance {
+  padding: 5%;
+}
+#need-assistance .container {
+  max-width: 900px;
+  padding: 5%;
+  background-color: #ffcf75;
+}
+#need-assistance .container h5{
+  font-size: 16px;
+}
+}

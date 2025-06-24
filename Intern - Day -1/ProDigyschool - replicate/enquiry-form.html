@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Contact Us - Prodigy International Montessori School</title>
+    <title>Enquiry Form - Prodigy International Montessori School</title>
     <link rel="icon" href="./Images/prodigy-international-school-logo-1.png" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -12,8 +12,7 @@
     <!-- Css Link -->
 
     <link rel="stylesheet" href="./css/homestyle.css" />
-    <link rel="stylesheet" href="./css/aboutstyle.css" />
-    <link rel="stylesheet" href="./css/contactstyle.css" />
+    <link rel="stylesheet" href="./css/EnquiryStyle.css" />
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
@@ -91,23 +90,23 @@
                   ></button>
                   <ul class="dropdown-menu border-0 p-2" id="aboutDropdown">
                     <li>
-                      <a class="dropdown-item" href="./about.html#vision-section">Vision</a>
+                      <a class="dropdown-item" href="#vision-section">Vision</a>
                     </li>
                     <li><hr class="dropdown-divider full-divider" /></li>
                     <li>
-                      <a class="dropdown-item" href="./about.html#mission-section"
+                      <a class="dropdown-item" href="#mission-section"
                         >Mission</a
                       >
                     </li>
                     <li><hr class="dropdown-divider full-divider" /></li>
                     <li>
-                      <a class="dropdown-item" href="./about.html#about-montessori-section"
+                      <a class="dropdown-item" href="#about-montessori-section"
                         >Montessori Pedagogy</a
                       >
                     </li>
                     <li><hr class="dropdown-divider full-divider" /></li>
                     <li>
-                      <a class="dropdown-item" href="./about.html#school-team-section"
+                      <a class="dropdown-item" href="#school-team-section"
                         >Team</a
                       >
                     </li>
@@ -152,7 +151,9 @@
               <!-- Admission Dropdown -->
               <li class="nav-item dropdown">
                 <div class="btn-group">
-                  <a href="./enrolment-process.html" class="nav-link">Admission</a>
+                  <a href="./enrolment-process.html" class="nav-link"
+                    >Admission</a
+                  >
                   <button
                     type="button"
                     class="btn dropdown-toggle dropdown-toggle-split nav-link px-2"
@@ -161,17 +162,25 @@
                   ></button>
                   <ul class="dropdown-menu border-0 p-2" id="admissionDropdown">
                     <li>
-                      <a class="dropdown-item" href="./enrolment-process.html">Enrolment Process</a>
+                      <a class="dropdown-item" href="./enrolment-process.html"
+                        >Enrolment Process</a
+                      >
                     </li>
                     <li><hr class="dropdown-divider full-divider" /></li>
-                    <li><a class="dropdown-item" href="./enquiry-form.html">Enquiry Form</a></li>
+                    <li>
+                      <a class="dropdown-item" href="./enquiry-form.html"
+                        >Enquiry Form</a
+                      >
+                    </li>
                   </ul>
                 </div>
               </li>
 
               <!-- Static link -->
               <li class="nav-item">
-                <a class="nav-link" href="./consultancy.html">Consultancy Services</a>
+                <a class="nav-link" href="./consultancy.html"
+                  >Consultancy Services</a
+                >
               </li>
 
               <!-- Media Dropdown -->
@@ -187,14 +196,18 @@
                   <ul class="dropdown-menu border-0 p-2" id="mediaDropdown">
                     <li><a class="dropdown-item" href="#">Blog</a></li>
                     <li><hr class="dropdown-divider full-divider" /></li>
-                    <li><a class="dropdown-item" href="./Testimonials.html">Testimonials</a></li>
+                    <li>
+                      <a class="dropdown-item active" href="./Testimonials.html"
+                        >Testimonials</a
+                      >
+                    </li>
                   </ul>
                 </div>
               </li>
 
               <!-- Contact link -->
               <li class="nav-item">
-                <a class="nav-link active" href="./contact.html">Contact us</a>
+                <a class="nav-link" href="./contact.html">Contact us</a>
               </li>
             </ul>
           </div>
@@ -202,17 +215,17 @@
       </nav>
     </header>
     <main>
-      <!-- About background here -->
-      <div class="contact-image">
+      <!-- Enquiry background here -->
+      <div class="enquiry-form-image">
         <img src="./Images/about-background.jpg" alt="" />
         <div class="overlay-text text-center">
-          <h1>Contact Us</h1>
-          <p>HOME / <span class="text-black fw-bold">CONTACT US</span></p>
+          <h1>Enquiry Form</h1>
+          <p>HOME / <span class="text-black fw-bold">ENQUIRY FORM</span></p>
         </div>
       </div>
 
       <!-- Move SVG here -->
-      <div class="contact-wave">
+      <div class="enquiry-form-wave">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#ffffff"
@@ -221,107 +234,123 @@
           ></path>
         </svg>
       </div>
+      <section id="enquiry-form-section" class="container">
+        <h3 class="title-2 fs-2 fw-light text-center mb-4">
+          Fill Out This <span class="fw-semibold">Enquiry Form!</span>
+        </h3>
 
-      <!-- contact section here -->
-      <section id="contact-section">
-        <div class="contact-box">
-          <div class="row g-lg-4">
-            <!-- Left image -->
-            <div class="col-lg-6 col-sm-12 align-content-center">
-              <img
-                src="./Images/contact.jpg"
-                alt="Child activity"
-                class="img-fluid contact-img"
+        <div id="successAlert" class="alert alert-success d-none text-center" role="alert">
+          Thank you! Your enquiry has been submitted successfully.
+        </div>
+
+        <div id="formContainer">
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+              <label for="childName" class="form-label"
+                >Name of the child <span class="text-danger">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="childName"
+                placeholder="Enter the name"
+                required
               />
+              <div class="invalid-feedback">Please enter the child's name.</div>
             </div>
 
-            <!-- Right contact info -->
-            <div class="col-lg-6 col-sm-12 contact-info text-white p-4">
-              <h1><i class="fa-solid fa-phone"></i> Call Us</h1>
-              <p>
-                <a href="tel:+919698333366">+91 96983 33366</a><br />
-                <a href="tel:+919965333366">+91 99653 33366</a>
-              </p>
-
-              <h1><i class="fa-solid fa-envelope"></i> Email Us</h1>
-              <p>
-                <a href="mailto:info@prodigyschool.in">info@prodigyschool.in</a
-                ><br />
-                <a href="mailto:admin@prodigyschool.in"
-                  >admin@prodigyschool.in</a
-                >
-              </p>
-
-              <h1><i class="fa-solid fa-location-dot"></i> Location</h1>
-              <p>
-                <strong>Branch @ Peelamedu</strong><br />
-                <a
-                  href="https://www.google.com/maps/search/?q=106, Periyar Nagar, Balan Nagar, Peelamedu, Coimbatore - 641004"
-                  target="_blank"
-                >
-                  106, Periyar Nagar, Balan Nagar (opp to Reliance Fresh),<br />
-                  Peelamedu, Coimbatore - 641004. </a
-                ><br /><br />
-
-                <strong>Branch @ Thudiyalur</strong><br />
-                <a
-                  href="https://www.google.com/maps/search/?q=4/87, Rayar Gardens, Thudiyalur, Coimbatore - 641034"
-                  target="_blank"
-                >
-                  4/87, Rayar Gardens, Thudiyalur, Coimbatore - 641034. </a
-                ><br /><br />
-
-                <strong>Branch @ Udumalpet</strong><br />
-                <a
-                  href="https://www.google.com/maps/search/?q=West of SNR Nagar, Near Ottukulam, Dhali road, Udumalpet - 642126"
-                  target="_blank"
-                >
-                  West of SNR Nagar, Near Ottukulam, Dhali road,<br />
-                  Udumalpet - 642126. </a
-                ><br />
-                Ph: <a href="tel:+919576333366">9576333366</a>
-              </p>
-
-              <!-- Social media -->
-              <div class="mt-4 ms-3">
-                <a href="#" class="me-3 text-white"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a href="#" class="me-3 text-white"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a href="#" class="me-3 text-white"
-                  ><i class="fab fa-youtube"></i
-                ></a>
-                <a href="#" class="text-white"
-                  ><i class="fab fa-instagram"></i
-                ></a>
+            <div class="col-md-4">
+              <label for="dob" class="form-label"
+                >Date of birth <span class="text-danger">*</span></label
+              >
+              <input type="date" class="form-control" id="dob" required />
+              <div class="invalid-feedback">
+                Please enter a valid date of birth.
               </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <section id="map-section">
-          <div class="row g-lg-4">
-            <div class="col-lg-6 col-md-12">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31329.979797190004!2d77.016925!3d11.02005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857849c28a8bf%3A0xb0948c877cabc024!2sProdigy%20International%20Montessori%20School%20%7C%20Best%20Montessori%20school%20in%20Coimbatore!5e0!3m2!1sen!2smy!4v1750681299295!5m2!1sen!2smy"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+            <div class="col-md-2">
+              <label for="age" class="form-label"
+                >Age <span class="text-danger">*</span></label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="age"
+                min="1"
+                required
+              />
+              <div class="invalid-feedback">Please enter age.</div>
             </div>
-            <div class="col-lg-6 col-md-12">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7830.858110816658!2d76.951855!3d11.081366!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f647ea466dc1%3A0x5c4f05dff98f2b3e!2sGNANA%20SAI%20KOIL!5e0!3m2!1sen!2sin!4v1750681344530!5m2!1sen!2sin"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-          </div>
+
+            <div class="col-md-6">
+              <label for="parentName" class="form-label"
+                >Name of the Parent <span class="text-danger">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="parentName"
+                placeholder="Enter the name"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter the parent's name.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="email" class="form-label"
+                >Email <span class="text-danger">*</span></label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="abc@gmail.com"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="phone" class="form-label"
+                >Phone number <span class="text-danger">*</span></label
+              >
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                placeholder="Enter the number"
+                pattern="[0-9]{10}"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid 10-digit phone number.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+                placeholder="Write your message..."
+              ></textarea>
+            </div>
+
+            <div class="col-12">
+              <button
+                class="btn btn-warning text-white rounded-pill px-4"
+                type="submit"
+              >
+                SUBMIT
+              </button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
@@ -467,5 +496,33 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script>
+      (() => {
+        "use strict";
+        const forms = document.querySelectorAll(".needs-validation");
+        const alertBox = document.getElementById("successAlert");
+        const formContainer = document.getElementById("formContainer");
+
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              event.preventDefault();
+
+              if (!form.checkValidity()) {
+                event.stopPropagation();
+              } else {
+                // Hide form and show success alert
+                formContainer.style.display = "none";
+                alertBox.classList.remove("d-none");
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
   </body>
 </html>

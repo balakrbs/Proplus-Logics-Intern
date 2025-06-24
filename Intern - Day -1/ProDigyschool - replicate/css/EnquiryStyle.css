@@ -1,0 +1,81 @@
+.enquiry-form-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.enquiry-form-image img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.enquiry-form-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(194, 124, 58, 0.4); /* red with 50% opacity */
+  z-index: 1;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+}
+
+.overlay-text h1 {
+  font-size: 3rem;
+}
+.overlay-text p {
+  font-size: 1rem;
+}
+
+.enquiry-form-wave {
+  position: relative;
+  z-index: 4;
+  top: -13rem;
+}
+
+.enquiry-form-wave svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#enquiry-form-section{
+    position: relative;
+    z-index: 6;
+    margin-top: -18rem;
+    padding: 3% 10%;
+}
+
+form{
+    padding: 5%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #b6b6b6;
+}
+@media only screen and (max-width: 768px) {
+  .enquiry-form-wave {
+    top: -20.8rem;
+  }
+  .enquiry-form-image::before {
+    height: 35%;
+  }
+  .overlay-text {
+    top: 10%;
+  }
+  .overlay-text h1 {
+    font-size: 1.6rem;
+  }
+  .overlay-text p {
+    font-size: 0.5rem;
+  }
+}

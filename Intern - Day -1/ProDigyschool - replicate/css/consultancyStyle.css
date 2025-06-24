@@ -1,0 +1,114 @@
+.consultancy-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.consultancy-image img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.consultancy-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(194, 124, 58, 0.4); /* red with 50% opacity */
+  z-index: 1;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+}
+
+.overlay-text h1 {
+  font-size: 3rem;
+}
+.overlay-text p {
+  font-size: 1rem;
+}
+
+.consultancy-wave {
+  position: relative;
+  z-index: 4;
+  top: -13rem;
+}
+
+.consultancy-wave svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#consultancy-section {
+  position: relative;
+  z-index: 6;
+  margin-top: -20rem;
+  padding: 5%;
+}
+
+.consultancy-box {
+  border-radius: 8px;
+  padding: 50px;
+}
+
+.consultancy-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.consultancy-box h2 {
+  font-size: 28px;
+}
+
+.consultancy-box p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #727272;
+}
+.proposals {
+  width: 100%;
+  padding: 10px;
+}
+.proposals i {
+  color: #4b4b4b;
+  margin-right: 8px;
+}
+.proposals p {
+  font-size: 15px;
+}
+@media only screen and (max-width: 768px) {
+  .consultancy-wave {
+    top: -20.5rem;
+  }
+  .consultancy-image::before {
+    height: 40%;
+  }
+  .overlay-text {
+    top: 10%;
+  }
+  .overlay-text h1 {
+    font-size: 1.6rem;
+  }
+  .overlay-text p {
+    font-size: 0.5rem;
+  }
+
+  #consultancy-section {
+    margin-top: -22rem;
+    padding: 2%;
+  }
+  .consultancy-box{
+    text-align: center;
+  }
+}

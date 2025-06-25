@@ -27,6 +27,3 @@ const slider = document.getElementById('cardSlider');
       const walk = (x - startX) * 2;
       slider.scrollLeft = scrollLeft - walk;
     });
-
-
-    

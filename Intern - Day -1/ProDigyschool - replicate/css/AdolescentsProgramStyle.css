@@ -1,0 +1,92 @@
+.overlay-text h1 {
+  font-size: 2.5rem;
+}
+.overlay-text p {
+  font-size: 1.1rem;
+}
+#adolescents-program-section-1{
+  padding: 2% 6%;
+}
+.montessori-education-box {
+  padding: 1%;
+}
+.montessori-education-box p {
+  text-align: justify;
+  color: gray;
+}
+.hr-line {
+  width: 85%;
+  border: 2px dashed #252525;
+}
+#adolescents-program-section-2 {
+  padding: 2% 2%;
+}
+#adolescents-program-section-2 .container {
+  margin-left: 10%;
+}
+
+#adolescents-program-section-2 p {
+  font-size: 15px;
+  color: #333;
+  text-align: center;
+  line-height: 1.6;
+}
+
+#adolescents-program-section-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#adolescents-program-section-3 {
+  position: relative;
+  z-index: 6;
+  padding: 2% 0%;
+}
+.academic-programme-box{
+  padding: 1% 1%;
+}
+.academic-programme-box img{
+  width: 100%;
+  margin-block: 8%;
+  align-content: center;
+}
+.text-justify {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  #adolescents-program-section-1 {
+    margin-top: -16rem;
+  }
+  .adolescents-program-image::before {
+    height: 30%;
+  }
+  .overlay-text {
+    top: 15%;
+  }
+  .overlay-text h1 {
+    font-size: 1rem;
+  }
+  .overlay-text p {
+    font-size: 0.4rem;
+  }
+  #adolescents-program-section-2 {
+    padding: 2% 3%;
+  }
+
+  .nurturing-responsible p {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .nurturing-responsible h1 {
+    font-size: 1.3rem;
+  }
+  #adolescents-program-section-2 {
+    padding:1%
+}
+#adolescents-program-section-2 .container {
+  margin-left: 0%;
+}
+}

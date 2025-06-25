@@ -1,17 +1,17 @@
-.primary-image {
+.primary-image, .elementary-image, .adolescents-program-image{
   position: relative;
   width: 100%;
   height: 400px;
   overflow: hidden;
 }
 
-.primary-image img {
+.primary-image img, .elementary-image img, .adolescents-program-image img{
   width: 100%;
   object-fit: cover;
   display: block;
 }
 
-.primary-image::before {
+.primary-image::before, .elementary-image::before, .adolescents-program-image::before {
   content: "";
   position: absolute;
   top: 0;
@@ -38,37 +38,37 @@
   font-size: 1rem;
 }
 
-.primary-wave {
+.primary-wave{
   position: relative;
   z-index: 4;
   top: -13rem;
 }
 
-.primary-wave svg {
+.primary-wave svg{
   display: block;
   width: 100%;
   height: auto;
 }
 #primary-section,
-#primary-curriculum-section {
+#primary-curriculum-section, #elementary-section {
   position: relative;
   z-index: 6;
   padding: 2% 10%;
 }
-.primary-box {
+.primary-box, .elementary-box {
   padding: 1% 15%;
 }
-.primary-curriculum-box img {
+.primary-curriculum-box img{
   width: 100%;
   margin-block: 8%;
   align-content: center;
 }
 
 @media only screen and (max-width: 768px) {
-  #primary-section {
-    margin-top: -15rem;
+  #primary-section, #elementary-section{
+    margin-top: -16rem;
   }
-  .primary-image::before {
+  .primary-image::before, .elementary-image::before{
     height: 30%;
   }
   .overlay-text {

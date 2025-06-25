@@ -1,0 +1,65 @@
+#elementary-section {
+  padding: 2% 2%;
+}
+#elementary-curriculum-section {
+  padding: 2% 6%;
+}
+.elementary-curriculum-box {
+  padding-inline: 4%;
+  padding-block: 1%;
+  line-height: 1.7;
+  text-align: justify;
+  color: grey;
+}
+.elementary-curriculum-box .title-2 {
+  font-size: 32px;
+}
+.elementary-curriculum-box p {
+  text-align: justify;
+}
+.elementary-curriculum-box p {
+  font-size: 15px;
+}
+#science-lab-section {
+  background-image: url("/Images/science-lab-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18% 8%;
+}
+.science-lab-box {
+  color: #000000;
+  text-align: justify;
+}
+
+.science-lab-box img {
+  padding: 4%;
+  border-radius: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+  .elementary-box {
+    padding: 15% 4%;
+  }
+  .elementary-curriculum-box .title-2 {
+    font-size: 28px;
+  }
+  #science-lab-section {
+    height: 95vh;
+    padding: 0% 0%;
+  }
+  .science-lab-box {
+    color: #000000;
+    text-align: justify;
+  }
+
+  .science-lab-box img {
+    padding: 2%;
+    border-radius: 60px;
+  }
+}

@@ -81,7 +81,7 @@
 }
 
 .dropdown-menu .dropdown-item {
-  padding: 10px 16px;
+  padding: 10px 10px;
   font-weight: 600;
   white-space: nowrap;
   color: #000;
@@ -93,7 +93,16 @@
   width: 100%;
   border-color: #ccc;
 }
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+  }
 
+  .dropdown-submenu .dropdown-menu {
+    left: 100%;
+    top: 0;
+    margin-left: 0.1rem;
+    margin-top: -0.1rem;
+  }
 
 
 /* Slider */

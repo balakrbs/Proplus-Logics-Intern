@@ -4,7 +4,8 @@
 .overlay-text p {
   font-size: 1.1rem;
 }
-#adolescents-program-section-1{
+#adolescents-program-section-1,
+#adolescents-program-section-4 {
   padding: 2% 6%;
 }
 .montessori-education-box {
@@ -39,20 +40,65 @@
 }
 
 #adolescents-program-section-3 {
-  position: relative;
-  z-index: 6;
-  padding: 2% 0%;
+  padding: 2% 3%;
 }
-.academic-programme-box{
+.academic-programme-box {
   padding: 1% 1%;
 }
-.academic-programme-box img{
+.academic-programme-box img {
   width: 100%;
   margin-block: 8%;
   align-content: center;
 }
 .text-justify {
   text-align: justify;
+}
+.art-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 2%;
+}
+.art-box {
+  color: #000000;
+  text-align: justify;
+}
+
+.art-box img {
+  padding: 4%;
+}
+
+#adolescents-program-section-5 {
+  padding: 0% 0%;
+}
+.container-custom {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 40px 15px;
+}
+.community-student-support-box {
+  position: relative;
+  background: url("/Images/montessori-trained-adult.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.community-student-support-box .overlay {
+  background-color: rgba(0, 0, 0, 0.6); 
+  padding: 40px;
+  height: 100%;
+  width: 100%;
+}
+
+.community-student-support-box p,
+.community-student-support-box h2 {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 @media only screen and (max-width: 768px) {
@@ -84,9 +130,15 @@
     font-size: 1.3rem;
   }
   #adolescents-program-section-2 {
-    padding:1%
-}
-#adolescents-program-section-2 .container {
-  margin-left: 0%;
-}
+    padding: 1%;
+  }
+  #adolescents-program-section-2 .container {
+    margin-left: 0%;
+  }
+  .community-student-support-box {
+    text-align: center;
+  }
+  .community-student-support-box .overlay {
+    padding: 15px;
+  }
 }

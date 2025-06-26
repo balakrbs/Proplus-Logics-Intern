@@ -109,19 +109,20 @@
 .slider {
   height: 45rem;
 }
-.slider > svg {
-  position: relative;
-  top: -12em;
-  z-index: 500;
+.carousel svg {
+  position: absolute;
+  bottom: -2rem;
 }
 
 /* About  */
 .about {
   padding: 10px 100px;
+  position: relative;
+  z-index: 7;
 }
 .main-title {
   color: #000000;
-  font-size: 3rem;
+  font-size:3.5rem;
   text-align: center;
   font-weight: 300;
   padding: 0px 0px 20px 0px;
@@ -177,7 +178,8 @@
 
 .vision {
   position: relative;
-  height: 30vh;
+  height: 35vh;
+  margin-block: 2%;
 }
 .vision-quote {
   border: none;
@@ -187,7 +189,7 @@
   text-align: center;
   top: 0;
   background: transparent;
-  padding: 30px 5px 5px 5px;
+  padding: 35px 5px 5px 5px;
   box-shadow: inset 0px 0px 10px 20px #ffff;
 }
 
@@ -533,7 +535,7 @@ footer .row img {
     border-radius: 100%;
   }
   .vision {
-    height: 20vh;
+    height: 25vh;
   }
   .vision-quote {
     padding: 10px 5px 5px 5px;
